@@ -1,0 +1,424 @@
+<?php
+/**
+ * Portada de Cabarete Épico.
+ * Los textos están en esta plantilla; las imágenes se cambian en Apariencia > Personalizar.
+ *
+ * @package cabarete-epic
+ */
+
+get_header();
+?>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-kite" viewBox="0 0 24 24"><path d="M12 2l7 8-7 8-7-8z"/><path d="M12 2v16M5 10h14"/><path d="M12 18c-2 2 2 3 0 5"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path d="M2 9c2-3 4-3 5 0s3 3 5 0 4-3 5 0 3 3 5 0"/><path d="M2 16c2-3 4-3 5 0s3 3 5 0 4-3 5 0 3 3 5 0"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="M2 20l7-13 4 7 3-4 6 10z"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></symbol>
+    <symbol id="i-fish" viewBox="0 0 24 24"><path d="M3 12c3-5 9-6 14-1l4-3v8l-4-3c-5 5-11 4-14-1z"/><circle cx="8" cy="11" r=".8"/></symbol>
+    <symbol id="i-shoe" viewBox="0 0 24 24"><path d="M6 21V10a6 6 0 0 1 12 0v11"/><path d="M6 17h3M15 17h3"/></symbol>
+    <symbol id="i-cable" viewBox="0 0 24 24"><path d="M2 5l20 4"/><rect x="8" y="9" width="8" height="8" rx="1.5"/><path d="M12 7v2"/></symbol>
+    <symbol id="i-glass" viewBox="0 0 24 24"><path d="M6 3h12l-1.5 17h-9z"/><path d="M7 9h10"/></symbol>
+    <symbol id="i-note" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol>
+    <symbol id="i-sail" viewBox="0 0 24 24"><path d="M12 3v14"/><path d="M12 4l7 11h-7z"/><path d="M4 19h16"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<main id="top">
+
+<!-- ================= PORTADA ================= -->
+<header class="cab-hero" id="inicio">
+  <img class="cab-hero__bg" src="<?php echo esc_url( cab_img( 'hero' ) ); ?>" alt="Playa de Cabarete con decenas de cometas en el cielo y velas extendidas sobre la arena" fetchpriority="high" decoding="async">
+  <div class="container">
+    <span class="cab-chip"><i></i>Costa Norte · Puerto Plata · República Dominicana</span>
+    <h1 class="cab-title">
+      <span class="visually-hidden">Cabarete</span>
+      <span aria-hidden="true" style="display:flex">
+        <span class="l" style="--i:0">C</span><span class="l" style="--i:1">A</span><span class="l" style="--i:2">B</span><span class="l" style="--i:3">A</span><span class="l" style="--i:4">R</span><span class="l t2" style="--i:5">E</span><span class="l t2" style="--i:6">T</span><span class="l t2" style="--i:7">E</span>
+      </span>
+    </h1>
+    <p class="cab-hero__lead">Un pueblo costero pequeño que vive del viento y las olas. Kitesurf, surf y windsurf de día, bares frente al mar de noche.</p>
+    <div class="cab-hero__cta">
+      <a class="btn-cab" href="<?php echo esc_url( home_url( '/' ) ); ?>#planifica">Planifica tu viaje <svg class="cab-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn-ghost" href="<?php echo esc_url( home_url( '/' ) ); ?>#galeria">Ver fotos</a>
+    </div>
+  </div>
+  <div class="cab-wave back" aria-hidden="true">
+    <svg viewBox="0 0 2400 100" preserveAspectRatio="none"><path class="w2" d="M0 55 Q150 5 300 55 T600 55 T900 55 T1200 55 T1500 55 T1800 55 T2100 55 T2400 55 V100 H0Z"/></svg>
+  </div>
+  <div class="cab-wave" aria-hidden="true">
+    <svg viewBox="0 0 2400 100" preserveAspectRatio="none"><path d="M0 62 Q150 14 300 62 T600 62 T900 62 T1200 62 T1500 62 T1800 62 T2100 62 T2400 62 V100 H0Z"/></svg>
+  </div>
+</header>
+
+<section class="cab-stats" aria-label="Cabarete en cifras">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-6 col-lg-3"><div class="cab-stat"><b><span data-count="20">20</span><small>min</small></b><span>del aeropuerto de Puerto Plata</span></div></div>
+      <div class="col-6 col-lg-3"><div class="cab-stat"><b><span data-count="3">3</span></b><span>playas para elegir ambiente</span></div></div>
+      <div class="col-6 col-lg-3"><div class="cab-stat"><b><span data-count="25">25</span>–<span data-count="28">28</span><small>°C</small></b><span>de diciembre a abril</span></div></div>
+      <div class="col-6 col-lg-3"><div class="cab-stat"><b><span data-count="14600">14.600</span></b><span>habitantes, censo de 2010</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="cab-marquee" aria-hidden="true">
+  <div class="cab-marquee__track">
+    <div class="cab-marquee__in"><span>Kitesurf</span><i></i><span>Windsurf</span><i></i><span>Surf</span><i></i><span>Paddle</span><i></i><span>Cascadas</span><i></i><span>Caballos</span><i></i><span>Música en vivo</span><i></i></div>
+    <div class="cab-marquee__in"><span>Kitesurf</span><i></i><span>Windsurf</span><i></i><span>Surf</span><i></i><span>Paddle</span><i></i><span>Cascadas</span><i></i><span>Caballos</span><i></i><span>Música en vivo</span><i></i></div>
+  </div>
+</div>
+
+<!-- ================= TURISMO ================= -->
+<section class="cab-sec" id="turismo">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 cab-rv">
+        <span class="cab-eyebrow">¿Hay mucho turismo?</span>
+        <span class="cab-yes" aria-label="Sí">Sí,</span>
+      </div>
+      <div class="col-lg-7 cab-rv" style="--d:120ms">
+        <h2 class="cab-h2">pero con escala de pueblo.</h2>
+        <p class="cab-lead" style="max-width:none">Cabarete es uno de los destinos de deportes de viento más conocidos del Caribe, así que recibe turistas todo el año. Se llena más de diciembre a abril y en julio y agosto, cuando en la playa principal cuesta encontrar espacio después de las 10 a. m. A diferencia de Punta Cana, casi no hay mega resorts todo incluido. Predominan los hoteles pequeños, los apartamentos y las casas, y mucho extranjero que vive aquí.</p>
+        <ul class="cab-tags">
+          <li>Temporada alta: dic a abr y jul a ago</li>
+          <li>Pocos todo incluido</li>
+          <li>Comunidad de residentes extranjeros</li>
+          <li>Económico para el Caribe</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERÍA ================= -->
+<section class="cab-sec" id="galeria" style="padding-top:0">
+  <div class="container">
+    <div class="cab-rv">
+      <span class="cab-eyebrow">Galería</span>
+      <h2 class="cab-h2">Mira Cabarete.</h2>
+      <p class="cab-lead">Toca una foto para verla en grande.</p>
+    </div>
+    <div class="row g-3 mt-3">
+      <div class="col-lg-8 cab-rv"><button type="button" class="cab-tile cab-h-360" data-light data-cap="Un cielo lleno de cometas sobre la playa"><img data-key="sky" src="<?php echo esc_url( cab_img( 'sky' ) ); ?>" alt="Decenas de cometas de colores en un cielo azul" loading="lazy"><span class="cap">Un cielo lleno de cometas</span><span class="zoom"><svg class="cab-arrow" aria-hidden="true"><use href="#i-zoom"/></svg></span></button></div>
+      <div class="col-lg-4 cab-rv" style="--d:80ms"><button type="button" class="cab-tile cab-h-360" data-light data-cap="Palmeras y un parador de madera frente al mar"><img data-key="palms" src="<?php echo esc_url( cab_img( 'palms' ) ); ?>" alt="Palmeras y un parador de madera junto a la playa" loading="lazy"><span class="cap">Palmeras frente al mar</span><span class="zoom"><svg class="cab-arrow" aria-hidden="true"><use href="#i-zoom"/></svg></span></button></div>
+      <div class="col-lg-7 cab-rv"><button type="button" class="cab-tile cab-h-300" data-light data-cap="Cometas extendidas sobre la arena, listas para volar"><img data-key="sand" src="<?php echo esc_url( cab_img( 'sand' ) ); ?>" alt="Grandes cometas naranjas y rosadas extendidas sobre la arena" loading="lazy"><span class="cap">Cometas listas en la arena</span><span class="zoom"><svg class="cab-arrow" aria-hidden="true"><use href="#i-zoom"/></svg></span></button></div>
+      <div class="col-lg-5 cab-rv" style="--d:80ms"><button type="button" class="cab-tile cab-h-300" data-light data-cap="Arrecifes y aguas turquesa vistos desde el aire"><img data-key="reef" src="<?php echo esc_url( cab_img( 'reef' ) ); ?>" alt="Arrecifes oscuros entre aguas turquesa, vistos desde el aire" loading="lazy"><span class="cap">Arrecifes y aguas turquesa</span><span class="zoom"><svg class="cab-arrow" aria-hidden="true"><use href="#i-zoom"/></svg></span></button></div>
+      <div class="col-lg-4 cab-rv"><button type="button" class="cab-tile cab-h-260" data-light data-cap="Casas entre palmeras junto a la playa"><img data-key="town" src="<?php echo esc_url( cab_img( 'town' ) ); ?>" alt="Casas entre palmeras a lo largo de la playa" loading="lazy"><span class="cap">Pueblo entre palmeras</span><span class="zoom"><svg class="cab-arrow" aria-hidden="true"><use href="#i-zoom"/></svg></span></button></div>
+      <div class="col-lg-3 col-6 cab-rv" style="--d:80ms"><button type="button" class="cab-tile cab-h-260" data-light data-cap="Olas rompiendo en la costa"><img data-key="waves" src="<?php echo esc_url( cab_img( 'waves' ) ); ?>" alt="Olas blancas rompiendo sobre aguas turquesa" loading="lazy"><span class="cap">Olas en la costa</span><span class="zoom"><svg class="cab-arrow" aria-hidden="true"><use href="#i-zoom"/></svg></span></button></div>
+      <div class="col-lg-5 col-6 cab-rv" style="--d:160ms"><button type="button" class="cab-tile cab-h-260" data-light data-cap="Kitesurfistas entrando al agua"><img data-key="surf" src="<?php echo esc_url( cab_img( 'surf' ) ); ?>" alt="Kitesurfistas caminando hacia el mar con sus equipos" loading="lazy"><span class="cap">Hacia el agua</span><span class="zoom"><svg class="cab-arrow" aria-hidden="true"><use href="#i-zoom"/></svg></span></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCIAS ================= -->
+<section class="cab-sec" id="experiencias" style="padding-top:0">
+  <div class="container">
+    <div class="cab-rv">
+      <span class="cab-eyebrow">Qué hacer</span>
+      <h2 class="cab-h2">Con viento o sin viento, hay plan.</h2>
+    </div>
+    <ul class="nav cab-pills cab-rv" role="tablist">
+      <li><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#ex-agua" type="button" role="tab" aria-selected="true">En el agua</button></li>
+      <li><button class="nav-link" data-bs-toggle="pill" data-bs-target="#ex-nat" type="button" role="tab" aria-selected="false">Naturaleza</button></li>
+      <li><button class="nav-link" data-bs-toggle="pill" data-bs-target="#ex-noche" type="button" role="tab" aria-selected="false">Noche y sabor</button></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="ex-agua" role="tabpanel">
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-3"><article class="cab-card cab-tilt"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-kite"/></svg></span><h3>Kitesurf</h3><p>Docenas de escuelas y vientos de tarde estables. Uno de los mejores lugares del mundo para aprender.</p><span class="lvl">Todos los niveles</span></article></div>
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-sail"/></svg></span><h3>Windsurf</h3><p>Cabarete también es famoso por el windsurf, con condiciones parecidas a las del kitesurf.</p><span class="lvl">Frente al pueblo</span></article></div>
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-wave"/></svg></span><h3>Surf</h3><p>Playa Encuentro tiene clases para principiantes y olas para quien ya sabe. Las tardes suelen ser lo mejor.</p><span class="lvl">Playa Encuentro</span></article></div>
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-drop"/></svg></span><h3>Paddle</h3><p>Las lagunas y los ríos de la zona son buenos para practicar stand-up paddle con calma.</p><span class="lvl">Principiantes</span></article></div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="ex-nat" role="tabpanel">
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-mountain"/></svg></span><h3>Parque Nacional El Choco</h3><p>Cuevas, lagunas y bosque en las faldas de la Cordillera Septentrional.</p><span class="lvl">Medio día</span></article></div>
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-drop"/></svg></span><h3>Saltos de Damajagua</h3><p>Descenso por cascadas, conocido como los 27 Charcos. Está tierra adentro.</p><span class="lvl">Aventura</span></article></div>
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-shoe"/></svg></span><h3>Caballos en la playa</h3><p>Paseos a caballo por senderos junto al mar. Buena opción si no haces deportes de viento.</p><span class="lvl">En familia</span></article></div>
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-cable"/></svg></span><h3>Teleférico</h3><p>Sube al Parque Nacional Isabel de Torres, en Puerto Plata, a unos 38 km del pueblo.</p><span class="lvl">Día de viaje</span></article></div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="ex-noche" role="tabpanel">
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-moon"/></svg></span><h3>Bares frente al mar</h3><p>Al caer el sol, el pueblo cobra vida con bares y discotecas sobre la playa.</p><span class="lvl">Desde el atardecer</span></article></div>
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-note"/></svg></span><h3>Música en vivo</h3><p>Hay música en vivo y baile hasta altas horas de la madrugada.</p><span class="lvl">Fines de semana y más</span></article></div>
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-fish"/></svg></span><h3>Mariscos frescos</h3><p>Pescado y mariscos en cafés y restaurantes a pie de playa.</p><span class="lvl">Almuerzo y cena</span></article></div>
+          <div class="col-md-6 col-lg-3"><article class="cab-card"><span class="cab-ico"><svg aria-hidden="true"><use href="#i-glass"/></svg></span><h3>Presidente y Bohemia</h3><p>Las dos cervezas locales. El ron es muy popular y los tragos suelen venir fuertes.</p><span class="lvl">Bebe con calma</span></article></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BANDA AÉREA ================= -->
+<section class="cab-band" id="vista" aria-label="Vista aérea de Cabarete">
+  <img src="<?php echo esc_url( cab_img( 'aerial' ) ); ?>" alt="Vista aérea de la costa de Cabarete con playa, palmeras, arrecifes y montañas al fondo" loading="lazy">
+  <div class="container cab-rv">
+    <span class="cab-eyebrow">Desde el aire</span>
+    <h2 class="cab-h2">Arrecifes, palmas y montaña.</h2>
+    <p class="cab-lead" style="color:rgba(234,246,245,.88)">La costa norte, con las olas rompiendo sobre el arrecife y la Cordillera Septentrional al fondo.</p>
+  </div>
+</section>
+
+<!-- ================= PLAYAS ================= -->
+<section class="cab-sec" id="playas">
+  <div class="container">
+    <div class="cab-rv">
+      <span class="cab-eyebrow">Playas</span>
+      <h2 class="cab-h2">Tres playas, tres ambientes.</h2>
+      <p class="cab-lead">Están en la misma carretera, de este a oeste. Toca una para ver cómo es.</p>
+    </div>
+    <div class="cab-coast" role="tablist" aria-label="Playas de Cabarete, de oeste a este">
+      <span class="end w">Oeste</span><span class="end e">Este</span>
+      <button class="cab-node" style="left:12%" data-bs-toggle="pill" data-bs-target="#pl-enc" type="button" role="tab" aria-selected="false"><span class="dot"></span><span class="nm">Playa Encuentro</span><span class="ds">~3 millas al oeste</span></button>
+      <button class="cab-node active" style="left:50%" data-bs-toggle="pill" data-bs-target="#pl-kite" type="button" role="tab" aria-selected="true"><span class="dot"></span><span class="nm">Kite Beach</span><span class="ds">~1.5 millas al oeste</span></button>
+      <button class="cab-node" style="left:88%" data-bs-toggle="pill" data-bs-target="#pl-cab" type="button" role="tab" aria-selected="false"><span class="dot"></span><span class="nm">Playa Cabarete</span><span class="ds">En el centro</span></button>
+    </div>
+    <div class="tab-content cab-beach">
+      <div class="tab-pane fade" id="pl-enc" role="tabpanel">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6"><img class="cab-beach-img" data-use="waves" alt="Olas blancas rompiendo sobre aguas turquesa"></div>
+          <div class="col-md-6"><h3>Playa Encuentro</h3><p>La playa de surf. Es de las más constantes del Caribe y sirve tanto a principiantes como a surfistas con experiencia.</p>
+            <ul><li>Escuelas de surf para empezar</li><li>Mejor por la tarde si ya surfeas</li><li>Cada febrero recibe el torneo Master of the Ocean</li></ul></div>
+        </div>
+      </div>
+      <div class="tab-pane fade show active" id="pl-kite" role="tabpanel">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6"><img class="cab-beach-img" data-use="sand" alt="Grandes cometas extendidas sobre la arena"></div>
+          <div class="col-md-6"><h3>Kite Beach</h3><p>El punto de referencia mundial del kitesurf. Hay viento constante, espacio para volar y un arrecife donde también se practica paddle surf.</p>
+            <ul><li>Escuelas para todos los niveles</li><li>Mejor viento de febrero a agosto</li><li>Bares y restaurantes en la arena</li></ul></div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pl-cab" role="tabpanel">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6"><img class="cab-beach-img" data-use="town" alt="Casas entre palmeras a lo largo de la playa"></div>
+          <div class="col-md-6"><h3>Playa Cabarete</h3><p>La playa del pueblo, con arena amplia y restaurantes y bares frente al mar. Buen lugar para ver windsurf, comer pescado y salir de noche.</p>
+            <ul><li>Todo a pocos pasos</li><li>Windsurf frente a la orilla</li><li>Ambiente hasta tarde</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= UN DÍA ================= -->
+<section class="cab-sec cab-day" id="dia">
+  <div class="container">
+    <div class="cab-rv" style="margin-bottom:2.5rem">
+      <span class="cab-eyebrow">Un día en Cabarete</span>
+      <h2 class="cab-h2">Del amanecer a la música.</h2>
+    </div>
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-6 cab-col-scene">
+        <div class="cab-arc" role="img" aria-label="Escena que pasa de la mañana a la noche mientras bajas la página">
+          <svg viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <g id="arcStars" opacity="0" fill="#fff"><circle cx="40" cy="30" r="1.4"/><circle cx="92" cy="58" r="1"/><circle cx="150" cy="22" r="1.6"/><circle cx="210" cy="46" r="1"/><circle cx="262" cy="20" r="1.3"/><circle cx="318" cy="54" r="1.6"/><circle cx="366" cy="28" r="1"/><circle cx="120" cy="92" r="1"/><circle cx="288" cy="96" r="1.2"/><circle cx="60" cy="110" r="1.2"/></g>
+            <g id="arcSun" transform="translate(40 190)"><circle r="46" fill="#FFB627" opacity=".22"/><circle r="26" fill="#FFB627" opacity=".35"/><circle r="15" fill="#FFD36B"/></g>
+            <g id="arcMoon" opacity="0" transform="translate(300 196)"><circle r="30" fill="#EAF6F5" opacity=".12"/><circle r="14" fill="#EAF6F5"/><circle cx="5" cy="-3" r="12" fill="#0A1E33" opacity=".35"/></g>
+            <rect y="190" width="400" height="70" fill="#03121A" opacity=".55"/>
+            <path d="M0 196 q25 -7 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2"/>
+            <path d="M0 214 q25 -7 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="2"/>
+            <g fill="#03121A"><path d="M20 190 q-4 -60 14 -104" stroke="#03121A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M34 86 q34 -28 70 -4 q-34 -6 -70 4z M34 86 q-34 -28 -70 -4 q34 -6 70 4z M34 86 q8 -42 46 -50 q-26 20 -46 50z M34 86 q-8 -42 -46 -50 q26 20 46 50z"/></g>
+          </svg>
+          <div class="clock" id="arcClock">6:30 a. m.<small>Mañana</small></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="cab-step on">
+          <span class="when">Mañana</span>
+          <h3>Llega temprano.</h3>
+          <p>En temporada alta, después de las 10 a. m. cuesta encontrar espacio en la playa principal. Aprovecha la mañana para pasear a caballo junto al mar o salir a El Choco y a los 27 Charcos.</p>
+        </div>
+        <div class="cab-step">
+          <span class="when">Tarde</span>
+          <h3>Sube el viento.</h3>
+          <p>Los vientos de tarde son los más estables, la hora de las clases de kitesurf en Kite Beach. En Playa Encuentro, las tardes son lo mejor para surfistas con experiencia.</p>
+        </div>
+        <div class="cab-step">
+          <span class="when">Noche</span>
+          <h3>Bares frente al mar.</h3>
+          <p>Mariscos frescos, una Presidente bien fría y música en vivo sobre la arena. El pueblo se queda despierto hasta tarde.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLANIFICADOR ================= -->
+<section class="cab-sec" id="planifica">
+  <div class="container">
+    <div class="cab-rv">
+      <span class="cab-eyebrow">Planificador</span>
+      <h2 class="cab-h2">¿Cuándo te conviene ir?</h2>
+      <p class="cab-lead">Elige qué quieres hacer y en qué mes viajas. Te decimos qué esperar de viento, olas, gente y clima.</p>
+    </div>
+    <div class="row g-4 mt-2 cab-rv">
+      <div class="col-lg-5">
+        <div class="cab-panel">
+          <span class="cab-label" id="plLabelI">¿Qué quieres hacer?</span>
+          <div class="cab-chips" role="radiogroup" aria-labelledby="plLabelI">
+            <input type="radio" class="btn-check" name="pl-i" id="pl-i1" value="kite" checked autocomplete="off"><label class="cab-chip-o" for="pl-i1">Kitesurf</label>
+            <input type="radio" class="btn-check" name="pl-i" id="pl-i2" value="surf" autocomplete="off"><label class="cab-chip-o" for="pl-i2">Surf</label>
+            <input type="radio" class="btn-check" name="pl-i" id="pl-i3" value="wind" autocomplete="off"><label class="cab-chip-o" for="pl-i3">Windsurf y paddle</label>
+            <input type="radio" class="btn-check" name="pl-i" id="pl-i4" value="nature" autocomplete="off"><label class="cab-chip-o" for="pl-i4">Naturaleza</label>
+            <input type="radio" class="btn-check" name="pl-i" id="pl-i5" value="family" autocomplete="off"><label class="cab-chip-o" for="pl-i5">En familia</label>
+          </div>
+          <label class="cab-label mt-4" for="plMonth">¿En qué mes viajas?</label>
+          <select id="plMonth" class="form-select cab-select">
+            <option value="0">Enero</option><option value="1">Febrero</option><option value="2">Marzo</option><option value="3">Abril</option><option value="4">Mayo</option><option value="5">Junio</option>
+            <option value="6">Julio</option><option value="7">Agosto</option><option value="8">Septiembre</option><option value="9">Octubre</option><option value="10" selected>Noviembre</option><option value="11">Diciembre</option>
+          </select>
+          <p class="cab-note" style="margin-top:1.2rem">Las temporadas son aproximadas y varían según la fuente.</p>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="cab-result" id="plOut" aria-live="polite">
+          <div class="cab-verdict"><i></i>Buen momento</div>
+          <h3>Kitesurf en noviembre</h3>
+          <div class="cab-rows">
+            <div class="cab-row"><b>Viento</b><span>Hay viento, pero la temporada más fuerte va de febrero a agosto.</span></div>
+            <div class="cab-row"><b>Olas</b><span>De septiembre a enero llegan más olas para surf, sobre todo por la mañana.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CALENDARIO ================= -->
+<section class="cab-sec" id="cuando" style="padding-top:0">
+  <div class="container">
+    <div class="cab-rv">
+      <span class="cab-eyebrow">Cuándo ir</span>
+      <h2 class="cab-h2">El viento marca el calendario.</h2>
+    </div>
+    <div class="cab-season mt-4 cab-rv">
+      <div class="cab-grid" role="table" aria-label="Calendario de temporadas en Cabarete">
+        <span></span>
+        <span class="m">Ene</span><span class="m">Feb</span><span class="m">Mar</span><span class="m">Abr</span><span class="m">May</span><span class="m">Jun</span><span class="m">Jul</span><span class="m">Ago</span><span class="m">Sep</span><span class="m">Oct</span><span class="m">Nov</span><span class="m">Dic</span>
+        <span class="l">Mejor para kite</span>
+        <span class="c"></span><span class="c kite"></span><span class="c kite"></span><span class="c kite"></span><span class="c kite"></span><span class="c kite"></span><span class="c kite"></span><span class="c kite"></span><span class="c"></span><span class="c"></span><span class="c"></span><span class="c"></span>
+        <span class="l">Más olas</span>
+        <span class="c wave"></span><span class="c"></span><span class="c"></span><span class="c"></span><span class="c"></span><span class="c"></span><span class="c"></span><span class="c"></span><span class="c wave"></span><span class="c wave"></span><span class="c wave"></span><span class="c wave"></span>
+        <span class="l">Temporada alta</span>
+        <span class="c busy"></span><span class="c busy"></span><span class="c busy"></span><span class="c busy"></span><span class="c"></span><span class="c"></span><span class="c busy"></span><span class="c busy"></span><span class="c"></span><span class="c"></span><span class="c"></span><span class="c busy"></span>
+        <span class="l">Huracanes</span>
+        <span class="c"></span><span class="c"></span><span class="c"></span><span class="c"></span><span class="c"></span><span class="c storm"></span><span class="c storm"></span><span class="c storm"></span><span class="c storm"></span><span class="c storm"></span><span class="c"></span><span class="c"></span>
+      </div>
+      <div class="cab-legend"><span><i style="background:var(--sea)"></i>Viento para kite</span><span><i style="background:#8FE6EB"></i>Más olas</span><span><i style="background:var(--sun)"></i>Más turistas</span><span><i style="background:var(--coral)"></i>Temporada de huracanes</span></div>
+    </div>
+    <p class="cab-note">De febrero a agosto hay vientos térmicos y alisios, lo mejor para kitesurf. De septiembre a enero llegan más olas para surf. Los impactos directos de huracanes son poco frecuentes, pero de junio a octubre hay lluvias y tormentas.</p>
+    <div class="cab-event cab-rv"><i>Febrero</i><b>Master of the Ocean</b><span>Torneo de surf, windsurf y kitesurf en Playa Encuentro, en la última semana del mes.</span></div>
+  </div>
+</section>
+
+<!-- ================= DORMIR Y COMER ================= -->
+<section class="cab-sec" id="dormir" style="padding-top:0">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6 cab-rv">
+        <span class="cab-eyebrow">Dónde dormir</span>
+        <h2 class="cab-h2">Tres zonas, tres estilos.</h2>
+        <div class="accordion cab-acc mt-4" id="accZonas">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#z1" aria-expanded="true" aria-controls="z1">Centro de Cabarete<small>A pie de todo</small></button></h3>
+            <div id="z1" class="accordion-collapse collapse show" data-bs-parent="#accZonas"><div class="accordion-body">Restaurantes, bares, tiendas y la playa principal a pocos pasos. La opción más cómoda si no quieres depender de transporte.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#z2" aria-expanded="false" aria-controls="z2">Kite Beach<small>Junto al viento</small></button></h3>
+            <div id="z2" class="accordion-collapse collapse" data-bs-parent="#accZonas"><div class="accordion-body">Hoteles y apartamentos cerca de las escuelas de kitesurf. Es una zona ventosa, más pensada para deportistas que para quien busca una playa tranquila.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#z3" aria-expanded="false" aria-controls="z3">Playa Encuentro<small>Cerca del surf</small></button></h3>
+            <div id="z3" class="accordion-collapse collapse" data-bs-parent="#accZonas"><div class="accordion-body">Posadas y hoteles junto a la carretera, a unos 6 km del centro. Conviene contar con transporte para ir a cenar al pueblo.</div></div>
+          </div>
+        </div>
+        <p class="cab-note">También hay villas y casas de alquiler a lo largo de la carretera entre Encuentro y Sosúa, y algunos hoteles todo incluido en la carretera Sosúa–Cabarete.</p>
+      </div>
+      <div class="col-lg-6 cab-rv" style="--d:120ms">
+        <span class="cab-eyebrow">Comer y beber</span>
+        <h2 class="cab-h2">A pocos pasos del mar.</h2>
+        <ul class="cab-eat">
+          <li><span class="cab-ico"><svg aria-hidden="true"><use href="#i-fish"/></svg></span><div><h4>Mariscos frescos</h4><p>Pescado y mariscos en restaurantes y cafés frente a la playa.</p></div></li>
+          <li><span class="cab-ico"><svg aria-hidden="true"><use href="#i-sail"/></svg></span><div><h4>Cocina internacional</h4><p>Por la comunidad extranjera, hay desde cafés casuales hasta restaurantes de más nivel.</p></div></li>
+          <li><span class="cab-ico"><svg aria-hidden="true"><use href="#i-drop"/></svg></span><div><h4>Opciones saludables</h4><p>Algunas guías mencionan un restaurante de comida saludable y mayormente vegana en Kite Beach.</p></div></li>
+          <li><span class="cab-ico"><svg aria-hidden="true"><use href="#i-glass"/></svg></span><div><h4>Cerveza y ron</h4><p>Las cervezas locales son Presidente y Bohemia. Los rones preparados suelen venir fuertes.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CÓMO LLEGAR ================= -->
+<section class="cab-sec" id="llegar" style="padding-top:0">
+  <div class="container">
+    <div class="cab-rv">
+      <span class="cab-eyebrow">Cómo llegar</span>
+      <h2 class="cab-h2">Aterriza en Puerto Plata.</h2>
+      <p class="cab-lead">El aeropuerto más cercano es Gregorio Luperón (POP). No hay transporte público hasta la terminal, así que se llega en taxi, Uber o auto de alquiler.</p>
+    </div>
+    <div class="table-responsive mt-4 cab-rv">
+      <table class="table cab-route">
+        <thead><tr><th scope="col">Desde</th><th scope="col">Cómo</th><th scope="col">Tiempo aprox.</th></tr></thead>
+        <tbody>
+          <tr><td>Aeropuerto POP</td><td>Taxi privado, Uber o auto de alquiler. Una tarifa de referencia es unos US$30 en taxi.</td><td>~20 min</td></tr>
+          <tr><td>Sosúa</td><td>Carro público o guagua por la carretera Sosúa–Cabarete (14 km).</td><td>~11 min</td></tr>
+          <tr><td>Puerto Plata</td><td>Carro, taxi o guagua (38 km).</td><td>~32 min</td></tr>
+          <tr><td>Santo Domingo</td><td>Autobús (Caribe Tours sale cada hora desde Sosúa) o auto, unos 200 km.</td><td>3 a 4 h</td></tr>
+          <tr><td>Punta Cana</td><td>Auto o traslado privado, unos 386 km.</td><td>~5 h</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cab-note">Dentro del pueblo se circula en taxi, a pie o en carritos y guaguas que van por la calle principal. Las tarifas y horarios cambian, así que confírmalos antes de viajar.</p>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="cab-sec cab-contact" id="contacto">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-5 cab-rv">
+        <span class="cab-eyebrow">Contacto</span>
+        <h2 class="cab-h2">Cuéntanos tu viaje.</h2>
+        <p class="cab-lead">Dinos qué quieres hacer y cuándo viajas, y te respondemos por correo.</p>
+      </div>
+      <div class="col-lg-7 cab-rv" style="--d:120ms">
+        <form class="cab-form" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" novalidate>
+          <input type="hidden" name="action" value="cab_contact">
+          <?php wp_nonce_field( 'cab_contact', 'cab_nonce' ); ?>
+          <div class="row g-3">
+            <div class="col-md-6"><label for="cf-nombre">Nombre</label><input id="cf-nombre" name="nombre" type="text" class="form-control cab-input" placeholder="Tu nombre" required autocomplete="name"></div>
+            <div class="col-md-6"><label for="cf-email">Correo</label><input id="cf-email" name="email" type="email" class="form-control cab-input" placeholder="tu@correo.com" required autocomplete="email"></div>
+            <div class="col-12"><label for="cf-interes">Me interesa</label>
+              <select id="cf-interes" name="interes" class="form-select cab-select"><option>Kitesurf</option><option>Surf</option><option>Windsurf y paddle</option><option>Naturaleza y excursiones</option><option>Viaje en familia</option><option>Otro</option></select></div>
+            <div class="col-12"><label for="cf-msg">Mensaje</label><textarea id="cf-msg" name="mensaje" rows="5" class="form-control cab-input" placeholder="Fechas, número de personas, preguntas…" required></textarea></div>
+            <div class="d-none" aria-hidden="true"><label for="cf-web">No llenar</label><input id="cf-web" name="cab_web" type="text" tabindex="-1" autocomplete="off"></div>
+            <div class="col-12"><button type="submit" class="btn-cab">Enviar mensaje <svg class="cab-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+          </div>
+          <div class="cab-form__status" aria-live="polite"><?php echo cab_form_notice(); // phpcs:ignore WordPress.Security.EscapeOutput ?></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Visor de fotos -->
+<div class="modal fade" id="cabLight" tabindex="-1" aria-label="Visor de fotos" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content cab-light">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      <button type="button" class="cab-light__nav prev" aria-label="Foto anterior">‹</button>
+      <img id="cabLightImg" alt="">
+      <button type="button" class="cab-light__nav next" aria-label="Foto siguiente">›</button>
+      <div class="cab-light__cap"><span id="cabLightCap"></span><span id="cabLightCount"></span></div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<?php
+get_footer();
